@@ -21,12 +21,12 @@ title_separator          : "-" # 구분 선
 subtitle                 : # 부제 site tagline that appears below site title in masthead
 name                     : "efwCherry99" # 이름
 description              : "C'est moi." # 설명
-url                      : # 블로그 주소 https://id.github.io로 할 것, e.g. "https://StHy47.github.io"
-baseurl                  : # 서브 주소, e.g. "efwCherry99.github/blog"
-repository               : # GitHub 레파지토리 주소 e.g. "StHy47/StHy47.github.io"
+url                      : "https://StHy47.github.io"# 블로그 주소 https://id.github.io로 할 것
+baseurl                  : "efwCherry99.github/blog" # 서브 주소
+repository               : "https://github.com/StHy47/StHy47.github.io" # GitHub 레파지토리 주소
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "장래희망 개발 정복" # 화면 타이틀
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -112,27 +112,27 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "efwCherry99"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am an **amazing** person." # 자기소개 # 줄바꿈은 <br>로 굵은 글씨는 **글씨**
+  location         : "Korea" #장소
+  email            : "efwCherry99@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:efwCherry99@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/StHy47"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -224,13 +224,13 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-# Outputting
+# Outputting 
 permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+paginate: 5 #첫 화면 게시물 수
 paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
@@ -322,3 +322,10 @@ defaults:
       comments: # true
       share: true
       related: true
+   # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
